@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(30, 48, 68);
+    color   : white;
+}
+h2{
+    text-align: center;
+    /* background-color: rgb(128, 239, 17); */
+    color: rgb(red, green, blue);
+    text-decoration: dotted;
+}
+audio{
+    
+}
