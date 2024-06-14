@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Media Query</title>
+    <style>
+        body {
+            background-color: rgb(10, 244, 186);
+
+        }
+
+        @media only screen and (max-width: 455px) {
+            body {
+                background-color: chocolate;
+
+                .boxes {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+
+                }
+            }
+        }
+
+        .boxes {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(10, 10, 10);
+            padding: 3px;
+            margin: 3px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Hey i am a red
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
