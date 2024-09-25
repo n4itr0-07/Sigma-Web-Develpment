@@ -1,0 +1,308 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0d0d0d;
+    color: #00ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+ Ensures everything centers both vertically and horizontally 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 900px;
+}
+
+
+#typewriter {
+    font-size: 2.5rem;
+    white-space: nowrap;
+    border-right: 3px solid #00ff00;
+    width: fit-content;
+    margin-bottom: 50px; 
+}
+
+
+.profile-card {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #1a1a1a;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    transform: scale(1.4); 
+    margin-bottom: 50px; 
+}
+
+.profile-image img {
+    border-radius: 10px;
+    width: 180px; 
+    height: 180px;
+    object-fit: cover;
+}
+
+
+.command-help {
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+    padding: 30px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    width: 600px;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.command-help h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00ff00;
+    margin-bottom: 15px;
+    white-space: nowrap;
+    position: relative;
+    animation: marquee 15s linear infinite;
+}
+
+
+.command-help ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.command-help li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.command-help li strong {
+    font-weight: bold;
+    color: #00ff00;
+}
+
+.command-help li em {
+    font-style: italic;
+    color: #ffffff;
+}
+
+
+.command-line {
+    margin-top: 50px;
+    background-color: #000000;
+    padding: 20px;
+    width: 600px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.prompt {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+#commandInput {
+    background-color: transparent;
+    border: none;
+    color: #00ff00;
+    font-size: 1.2rem;
+    width: 80%;
+    outline: none;
+}
+
+#commandOutput {
+    margin-top: 10px;
+    color: #00ff00;
+}
+
+
+#socialLinks {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    background-color: #00ff00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #0d0d0d;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.social-btn:hover {
+    background-color: #ff0000;
+}
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+.whoami-card {
+    margin-top: 50px; 
+    padding: 30px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    display: none; 
+    color: #ffffff;
+    text-align: left;
+}
+
+
+.whoami-card h2 {
+    color: #00ff00;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.whoami-card p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.whoami-card p strong {
+    color: #00ff00;
+}
+
+.whoami-card p em {
+    color: #ff00ff;
+}
+
+
+@keyframes marquee {
+    from {
+        left: 100%;
+    }
+    to {
+        left: -100%;
+    }
+} */
+
+
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background styling */
+body {
+    background-color: #0d0d0d;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styling the card */
+.card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #00ff00;
+}
+
+p {
+    color: #99ff99;
+}
+
+/* Command section styling */
+.commands {
+    margin-bottom: 20px;
+}
+
+.commands ul {
+    list-style-type: none;
+}
+
+.commands li {
+    margin-bottom: 10px;
+}
+
+/* Terminal styling */
+.terminal {
+    width: 100%;
+    max-width: 600px;
+    background-color: #1a1a1a;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #00ff00;
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5);
+}
+
+#output {
+    min-height: 100px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    color: #99ff99;
+    margin-bottom: 10px;
+}
+
+#terminal-input {
+    background-color: #0d0d0d;
+    color: #00ff00;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Footer styling */
+footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #00ff00;
+}
